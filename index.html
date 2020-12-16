@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div id="bigBox">
+        <div class="smallBox" id="left">
+            <h2 class="player" id="playerOne">Player 1</h2>
+            <p id="firstHoldCounter">0</p>
+            <div class="counter">
+                <p class="current">CURRENT</p>
+                <p id="playerOneCount">0</p>
+            </div>
+        </div>
+        <div class="smallBox" id="right">
+            <h2 class="player" id="playerTwo">Player 2</h2>
+            <p id="secondHoldCounter">0</p>
+            <div class="counter">
+                <p class="current">CURRENT</p>
+                <p id="playerTwoCount">0</p>
+            </div>
+        </div>
+    </div>
+    <div id="overlay">
+        <button class="buttons" type="button">
+            <p class="buttonText" id="newGame">NEW GAME</p>
+        </button>
+        <img id="dice" src="./img/dice1.png" alt="">
+        <button class="buttons" type="button">
+            <p class="buttonText" id="roll">ROLL DICE</p>
+        </button>
+        <button class="buttons" type="button">
+            <p class="buttonText" id="hold">HOLD</p>
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

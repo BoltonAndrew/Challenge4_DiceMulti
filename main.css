@@ -1,0 +1,128 @@
+body {
+    background-image: linear-gradient(to right, orange, red);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bigBox {
+    position: relative;
+    display: inline-flex;
+    margin: 0 auto;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.smallBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 50px;
+    border-radius: 4px;
+}
+
+#left {
+    background-color: tan;
+}
+
+#right {
+    background-color: white;
+}
+
+.player {
+    font-size: 40px;
+    margin: 0;
+}
+
+#firstHoldCounter {
+    font-size: 60px;
+}
+
+.counter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 77, 77);
+    text-align: center;
+}
+
+.current {
+    margin: 10px; 
+    width: fit-content
+}
+
+#playerOneCount {
+    margin: 10px;
+}
+
+#secondHoldCounter {
+    font-size: 60px;
+}
+
+#playerTwoCount {
+    margin: 10px;
+}
+
+#overlay {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    bottom: 290px;
+}
+
+.buttons {
+    background-color: transparent;
+    border: 0;
+    width: fit-content;
+    position: relative;
+    right: 7px;
+}
+
+#newGame::before {
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url(./img/plus.png);
+    background-size: 20px 20px;
+    position: relative;
+    top: 4px;
+}
+
+#roll::before {
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url(./img/refresh.png);
+    background-size: 20px 20px;
+    position: relative;
+    top: 4px;
+}
+
+#hold::before {
+    display: inline-flex;
+    height: 20px;
+    width: 20px;
+    content: "";
+    background-image: url(./img/down.png);
+    background-size: 20px 20px;
+    position: relative;
+    top: 4px;
+}
+
+#dice {
+    height: 70px;
+    width: 70px;
+    margin: 40px 0 70px;
+}
+
+.buttonText {
+    margin: 0;
+}
